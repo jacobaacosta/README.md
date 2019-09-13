@@ -1,0 +1,46 @@
+import turtle
+
+alexander=turtle.Turtle()
+acosta=turtle.Turtle()
+jacob=turtle.Turtle()
+acosta.up()
+jacob.goto(15,-120)
+acosta.down()
+
+
+alexander.shape("turtle")
+acosta.shape("turtle")
+jacob.shape("turtle")
+
+jacob.begin_fill()
+jacob.fillcolor("yellow")
+jacob.circle(170)
+jacob.end_fill()
+
+alexander.up()
+alexander.goto(-80,-35)
+alexander.setheading(-60)
+alexander.width(5)
+alexander.down()
+alexander.circle(100,100)
+alexander.fillcolor("black")
+
+
+
+for i in range(-35, 105, 70):
+    acosta.color("blue")
+    acosta.up()
+    acosta.goto(i, 35)
+    acosta.setheading(0)
+    acosta.down()
+    acosta.begin_fill()
+    acosta.circle(15)
+    acosta.end_fill()
+
+jacob.hideturtle()
+
+
+
+
+
+turtle.exitonclick()

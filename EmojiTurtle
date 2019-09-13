@@ -1,0 +1,14 @@
+import turtle
+wn = turtle.screen()
+jacob = turtle.Turtle()
+jacob.speed(0)
+
+while True:
+    jacob.forward(1)
+    jacob.left(1.15)
+    if abs(jacob.pos()) < 1:
+        break
+
+
+
+turtle.exitonclick ()
